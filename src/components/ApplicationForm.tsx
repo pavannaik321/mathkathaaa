@@ -1,54 +1,47 @@
 "use client";
 
-// import { useState } from "react";
-
 export default function FreeMathClassForm() {
-//   const [whatsapp, setWhatsapp] = useState(true);
-
   return (
     <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-md w-full max-w-5xl mx-auto my-10">
       {/* Left Section */}
-      <div className="bg-orange-500 text-white flex flex-col justify-center items-center p-8 md:p-12 md:w-1/2 relative"
-            style={{
-                backgroundImage: "url('Home/ApplicationForm/girl.png')", // place your image in /public as chalkboard-bg.png
-                backgroundSize: "cover",
-                backgroundPosition: "top",
-              }}
-      >
-
-        {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          &quot;Learning math is <br /> Fun with us&quot;
-        </h2>
-
-        <p className="text-center text-sm md:text-base italic">
-          “Excelling in math is a super power which every student is capable of acquiring.”
-        </p>
-
-        <p className="mt-4 font-semibold text-sm md:text-base text-center">
-          — Neelakantha Bhanu — <br />
-          <span className="font-normal">World’s Fastest Human Calculator</span>
-        </p> */}
-      </div>
+      <div
+        className="bg-orange-500 text-white flex flex-col justify-center items-center p-8 md:p-12 md:w-1/2 relative"
+        style={{
+          backgroundImage: "url('Home/ApplicationForm/girl.png')", 
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+        }}
+      ></div>
 
       {/* Right Section */}
       <div className="bg-[#0F3D3E] p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
         <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-          Book a <span className="text-[#fece11]">FREE</span> Class for your child!
+          Book a <span className="text-[#fece11]">TWO FREE</span> Class for your child!
         </h3>
 
-        <p className="text-white mb-4">😊 Enter your details below</p>
+        <p className="text-white mb-4">Enter your details below</p>
 
         {/* Form */}
         <form className="space-y-4">
-          {/* Phone Number */}
+          {/* Phone Number with Country Code */}
           <div className="flex">
-            <div className="flex items-center px-3 border border-gray-300 rounded-l-md bg-white">
-              <span className="mr-1">🇮🇳</span> +91
-            </div>
+            {/* <select
+              className="px-3 py-2 border border-gray-300 rounded-l-md bg-white text-black focus:outline-none"
+              defaultValue="+91"
+            >
+              <option value="+91">🇮🇳 +91 (India)</option>
+              <option value="+1">🇺🇸 +1 (USA)</option>
+              <option value="+44">🇬🇧 +44 (UK)</option>
+              <option value="+61">🇦🇺 +61 (Australia)</option>
+              <option value="+971">🇦🇪 +971 (UAE)</option>
+              <option value="+92">🇵🇰 +92 (Pakistan)</option>
+              <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+              <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+            </select> */}
             <input
               type="tel"
               placeholder="Parent’s Mobile Number"
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:outline-none placeholder:text-white"
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
             />
           </div>
 
@@ -56,53 +49,31 @@ export default function FreeMathClassForm() {
           <input
             type="email"
             placeholder="Parent’s Email Address"
-            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-white"
+            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
           {/* Child's Name */}
           <input
             type="text"
             placeholder="Child’s Name"
-            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-white"
+            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
-          {/* Grade's Name */}
+
+          {/* Grade */}
           <input
             type="text"
             placeholder="Grade"
-            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-white"
+            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
-          {/* Grade Dropdown */}
-          {/* <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
-            <option value="">Grade</option>
-            <option value="1">Grade 1</option>
-            <option value="2">Grade 2</option>
-            <option value="3">Grade 3</option>
-            <option value="4">Grade 4</option>
-            <option value="5">Grade 5</option>
-          </select> */}
+          {/* Query Box */}
+          <textarea
+            placeholder="Any queries or questions you may have..."
+            rows={4}
+            className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
+          ></textarea>
 
-          {/* Whatsapp Toggle */}
-          {/* <div className="flex items-center space-x-2">
-            <button
-              type="button"
-              onClick={() => setWhatsapp(!whatsapp)}
-              className={`w-10 h-6 flex items-center rounded-full p-1 transition-colors ${
-                whatsapp ? "bg-orange-500" : "bg-gray-300"
-              }`}
-            >
-              <div
-                className={`w-4 h-4 bg-white rounded-full shadow-md transform transition-transform ${
-                  whatsapp ? "translate-x-4" : "translate-x-0"
-                }`}
-              />
-            </button>
-            <span className="text-sm text-gray-700">
-              Get OTP & updates on Whatsapp
-            </span>
-          </div> */}
-
-          {/* Button */}
+          {/* Submit Button */}
           <button
             type="submit"
             className="w-full bg-[#cca300] text-white font-semibold px-4 py-3 rounded-full transition"

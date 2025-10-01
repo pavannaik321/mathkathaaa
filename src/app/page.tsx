@@ -9,6 +9,7 @@ import HomeAboutSection from "@/components/HomeAbout";
 import HowItWorks from "@/components/HowItWorks";
 import CourseOverview from "@/components/OurCourseOverview";
 import OurInspiration from "@/components/OurInspiration";
+import PricingSection from "@/components/PricingSection";
 import WorldMap from "@/components/WorldMap";
 import Image from "next/image";
 
@@ -16,13 +17,14 @@ export default function Home() {
   return (
     <>
     <HeroSection />
-      <OurInspiration />
+      <HomeAboutSection />
       <CourseOverview />
       {/* <WorldMap /> */}
       <FreeMathClassForm />
       <ExamsSection />
-      <HomeAboutSection />
+      <OurInspiration />
       <HowItWorks />
+      <PricingSection />
       <FAQSection />
     </>
   );

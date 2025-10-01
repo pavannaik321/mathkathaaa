@@ -27,7 +27,7 @@ export default function AchievementsSection() {
       icon: "/About/Achievements/kset.png", // qualification icon
     },
     {
-      title: "Olympiad Gold Medal",
+      title: "CREST Mathematics Olympiad",
       icon: "/About/Achievements/olympiad.png", // medal / trophy icon
     },
     {

@@ -18,11 +18,7 @@ export default function OurCourseOverview() {
             </h2>
           </div>
           <p className="text-white max-w-xl">
-            At Mathkathaa, we provide tailored educational solutions that cater
-            to your current syllabus, ensuring you stay on track with your
-            studies. Our competitive exam preparation equips you with the skills
-            needed to excel in various assessments. Dive into our unique 3K
-            Kathaaa approach that ignites curiosity and deepens understanding.
+          At Mathkathaaa, we offer tailored learning solutions aligned with your current syllabus, helping you stay confident and on track. Our dedicated competitive exam preparation equips you with the strategies and skills to excel in assessments. Beyond academics, our signature 3K Kathaaa approach is designed to spark curiosity, strengthen fundamentals, and nurture a deeper understanding of mathematics.
           </p>
         </div>
 

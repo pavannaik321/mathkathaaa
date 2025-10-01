@@ -13,7 +13,7 @@ export default function HowItWorks() {
       {
         id: 3,
         title: "Customized Timetable",
-        desc: "Our team creates a tailored timetable for the set duration.",
+        desc: "Our team creates a tailored timetable for a set duration.",
       },
       {
         id: 4,

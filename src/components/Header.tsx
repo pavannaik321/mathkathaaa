@@ -14,6 +14,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Course", href: "/Course" },
     { name: "About Us", href: "/About" },
+    { name: "Career", href: "/Career" },
     { name: "Testimonials", href: "/Testimonials" },
   ];
 
@@ -22,7 +23,7 @@ const Header = () => {
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         {/* Left: Company Name */}
         <Link href="/" className="text-2xl font-bold text-white">
-          Mathkathaa
+          Mathkathaaa
         </Link>
 
         {/* Center: Desktop Nav */}
