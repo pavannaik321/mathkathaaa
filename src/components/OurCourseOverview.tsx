@@ -63,7 +63,7 @@ export default function OurCourseOverview() {
           <button className="border border-white px-4 py-2 text-white font-medium hover:bg-white hover:text-[#0F3D3E] rounded">
             Explore
           </button>
-          <button className="flex items-center gap-2 text-white font-medium">
+          <button  className="flex items-center gap-2 text-white font-medium">
             Learn More <span className="text-xl">›</span>
           </button>
         </div>

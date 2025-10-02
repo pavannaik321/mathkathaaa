@@ -89,7 +89,6 @@ export default function Footer() {
           <div className="flex gap-6 mt-2 md:mt-0">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-            <a href="#">Cookie Settings</a>
           </div>
         </div>
       </div>

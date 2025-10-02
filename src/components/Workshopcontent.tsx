@@ -433,15 +433,15 @@ const WorkshopData = {
     const [activeGrade, setActiveGrade] = useState("2-3 grade");
   
     return (
-      <section className="py-20 bg-[#0F3D3E]">
+      <section className="py-20 bg-white">
 
   
         <div className="max-w-7xl mx-auto px-6">
 {/* Header */}
-<h2 className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-white">
+<h2 className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-[#0F3D3E]">
 Workshops that Turn Questions into Adventures
 </h2>
-<p className="text-center text-white max-w-4xl mx-auto mb-12 text-lg leading-relaxed">
+<p className="text-center text-[#0F3D3E] max-w-4xl mx-auto mb-12 text-lg leading-relaxed">
   A journey beyond textbooks—our workshops weave together stories, puzzles, art, 
   and science to reveal the hidden patterns of mathematics. Each session is 
   designed to ignite curiosity, nurture imagination, and help learners of all 
@@ -449,7 +449,7 @@ Workshops that Turn Questions into Adventures
 </p>
 
           {/* Grade Tabs */}
-          <div className="flex justify-center flex-wrap gap-4 mb-12">
+          <div className="flex justify-center flex-wrap gap-4 mb-12 text[#0F3D3E]">
             {Object.keys(WorkshopData).map((grade) => (
               <button
                 key={grade}
@@ -457,10 +457,10 @@ Workshops that Turn Questions into Adventures
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-md ${
                   activeGrade === grade
                     ? "bg-[#FFD93D] text-black shadow-lg scale-105"
-                    : "bg-white/10 text-gray-200 hover:bg-white/20"
+                    : "bg-[#0F3D3E]/10 text-black hover:bg-white/20"
                 }`}
               >
-                Grade {grade}
+                {grade}
               </button>
             ))}
           </div>
@@ -473,7 +473,7 @@ Workshops that Turn Questions into Adventures
             >)[activeGrade].map((topic, i) => (
               <div
                 key={i}
-                className="bg-gray-50 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col"
+                className="bg-[#0F3D3E] backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 flex flex-col"
               >
                 {/* Image placeholder */}
                 {topic.image && (
@@ -485,10 +485,10 @@ Workshops that Turn Questions into Adventures
                     />
                   </div>
                 )}
-                <h3 className="text-xl font-semibold mb-4 text-black">
+                <h3 className="text-xl font-semibold mb-4 text-white">
                   {topic.title}
                 </h3>
-                <ul className="text-black space-y-2 leading-relaxed">
+                <ul className="text-white space-y-2 leading-relaxed">
                   {topic.points.map((point, j) => (
                     <li key={j} className="flex items-start gap-2">
                       <span className="text-orange-400">•</span>

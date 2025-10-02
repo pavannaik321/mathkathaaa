@@ -23,22 +23,22 @@ export default function Workshops() {
         {
             title: "Invite Us",
             desc: "Schools | Colleges | Corporates | Any learning space.",
-            color: "bg-purple-500",
+            color: "bg-[#0F3D3E]",
         },
         {
             title: "Inside the Session",
             desc: "Math stories meet the concepts they shaped.",
-            color: "bg-red-500",
+            color: "bg-[#0F3D3E]",
         },
         {
             title: "Why It Matters",
             desc: "Uncover math’s creativity, struggles, and human side.",
-            color: "bg-blue-500",
+            color: "bg-[#0F3D3E]",
         },
         {
             title: "Your Experience",
             desc: "Pick themes, formats, and topics that fit your needs.",
-            color: "bg-green-500",
+            color: "bg-[#0F3D3E]",
         },
     ];
 

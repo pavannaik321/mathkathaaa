@@ -8,7 +8,7 @@ export default function Session() {
   const [openGrade, setOpenGrade] = useState<number | null>(null);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50" id="session">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-900">
         Chart Your Course

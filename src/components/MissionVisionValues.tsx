@@ -39,7 +39,7 @@ export default function MissionVisionValues() {
             >
               {/* Colored Top Bar */}
               <div
-                className={`absolute -top-2 left-0 right-0 h-2 rounded-t-2xl bg-${item.color}`}
+                className={`absolute -top-2 left-0 right-0 h-2 rounded-t-2xl`}
               ></div>
   
               {/* Icon */}
