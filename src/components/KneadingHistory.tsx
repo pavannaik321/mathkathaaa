@@ -71,7 +71,110 @@ const history = {
       desc: "He taught logic to machines, long before they could speak",
     },
   ],
+  "Grade 8–9": [
+    {
+      name: "Srinivasa Ramanujan",
+      desc: "Self-taught genius who explored infinity, patterns, and intuition",
+    },
+    {
+      name: "Leonhard Euler",
+      desc: "Blind mathematician who laid the groundwork for many fields",
+    },
+    {
+      name: "Henri Poincaré",
+      desc: "He saw chaos not as disorder, but as a new kind of harmony",
+    },
+    {
+      name: "Évariste Galois",
+      desc: "A child prodigy who tamed chaos, his mind was nature's compass",
+    },
+    {
+      name: "Emmy Noether",
+      desc: "The unseen backbone of physics, symmetry bowed at her insight",
+    },
+    {
+      name: "René Descartes",
+      desc: "He turned thoughts into graphs, drawing lines between mind and math",
+    },
+    {
+      name: "Sophie Germain",
+      desc: "She broke silence and boundaries, proving steel and theorems both could bend",
+    },
+    {
+      name: "George Boole",
+      desc: "He taught logic to machines, long before they could speak",
+    },
+  ],
+  "Grade 10–11": [
+    {
+      name: "Srinivasa Ramanujan",
+      desc: "Self-taught genius who explored infinity, patterns, and intuition",
+    },
+    {
+      name: "Henri Poincaré",
+      desc: "He saw chaos not as disorder, but as a new kind of harmony",
+    },
+    {
+      name: "René Descartes",
+      desc: "He turned thoughts into graphs, drawing lines between mind and math",
+    },
+    {
+      name: "Isaac Newton",
+      desc: "Gravity’s poet, he caught apples and planets in the same thought",
+    },
+    {
+      name: "Gottfried Wilhelm Leibniz",
+      desc: "His symbols flowed like rivers, splitting motion into moments",
+    },
+    {
+      name: "Joseph-Louis Lagrange",
+      desc: "Where others saw motion, he saw music in mathematics",
+    },
+    {
+      name: "Emmy Noether",
+      desc: "The unseen backbone of physics, symmetry bowed at her insight",
+    },
+    {
+      name: "Zeno of Elea",
+      desc: "A paradox weaver, who paused time with clever steps",
+    },
+  ],
+  "Grade 11+": [
+    {
+      name: "Srinivasa Ramanujan",
+      desc: "Self-taught genius who explored infinity, patterns, and intuition",
+    },
+    {
+      name: "Zeno of Elea",
+      desc: "A paradox weaver, who paused time with clever steps",
+    },
+    {
+      name: "Isaac Newton",
+      desc: "Gravity’s poet, he caught apples and planets in the same thought",
+    },
+    {
+      name: "Gottfried Wilhelm Leibniz",
+      desc: "His symbols flowed like rivers, splitting motion into moments",
+    },
+    {
+      name: "Andrey Kolmogorov",
+      desc: "He shaped randomness into reason, taming the wild winds of chance",
+    },
+    {
+      name: "Kurt Gödel",
+      desc: "He found holes in perfection, showing even logic has its ghosts",
+    },
+    {
+      name: "Alexander Grothendieck",
+      desc: "A hermit with cosmic chalk, redrawing the edges of geometry",
+    },
+    {
+      name: "Augustin-Louis Cauchy",
+      desc: "He built calculus on firm ground, giving rigor to fluid dreams",
+    },
+  ],
 };
+
 
 export default function KneadingHistory() {
   const [activeGroup, setActiveGroup] = useState("< Grade 6");

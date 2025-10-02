@@ -2,6 +2,7 @@ import HeroSection from '@/components/HeroSection'
 import KeystoneCuriosity from '@/components/KeystoneCuriosity'
 import KindlingConcepts from '@/components/KindlingConcepts'
 import KneadingHistory from '@/components/KneadingHistory'
+import Session from '@/components/Session'
 import TracksSection from '@/components/TracksSection'
 import Workshops from '@/components/WorkshopsSection'
 import React from 'react'
@@ -24,6 +25,7 @@ export default function page() {
       <KindlingConcepts />
       <KneadingHistory />
       <TracksSection />
+      <Session />
       {/* <Workshops /> */}
     </div>
   )

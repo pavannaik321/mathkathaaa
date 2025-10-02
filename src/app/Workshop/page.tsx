@@ -1,4 +1,5 @@
 import HeroSection from '@/components/HeroSection'
+import WorkshopContent from '@/components/Workshopcontent'
 import Workshops from '@/components/WorkshopsSection'
 import React from 'react'
 
@@ -58,7 +59,7 @@ export default function page() {
     </div>
   </div>
 </div>
-
+        <WorkshopContent />
           <Workshops />
           
     </div>

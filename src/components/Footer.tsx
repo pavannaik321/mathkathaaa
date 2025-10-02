@@ -1,6 +1,7 @@
 // src/app/components/Footer.tsx
 
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -41,7 +42,9 @@ export default function Footer() {
               <li>Our Courses</li>
               <li>Testimonials</li>
               <li>Contact Us</li>
-              <li>Blog Posts</li>
+              <li><Link href={
+                "/Career"
+              }>Career </Link></li>
             </ul>
           </div>
 
