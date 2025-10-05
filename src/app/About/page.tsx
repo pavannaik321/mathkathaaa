@@ -13,7 +13,7 @@ export default function page() {
 <MissionVisionValues />
 <AboutFounder />
 <FoundingPrinciple />
-<TeachersSection />
+{/* <TeachersSection /> */}
 <HowItWorks />
 </>
   )

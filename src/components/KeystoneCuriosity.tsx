@@ -212,8 +212,7 @@ export default function KeystoneCuriosity() {
         Keystone Curiosity
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-          Building the foundation of mathematical thinking, one concept at a
-          time. Explore structured journeys for each grade level.
+        Curiosity-driven explorations that spark early mathematical wonder.
         </p>
 
         {/* Grade Tabs */}

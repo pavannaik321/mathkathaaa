@@ -3,8 +3,8 @@ import HeroSection from '@/components/HeroSection'
 import Testimonials from '@/components/Testimonials'
 import TestimonialsCarousel from '@/components/TestimonialsCarousel'
 import TestimonialsCTA from '@/components/TestimonialsCTA'
-import TestimonialsStats from '@/components/TestimonialsStats'
-import VideoTestimonials from '@/components/VideoTestimonials'
+// import TestimonialsStats from '@/components/TestimonialsStats'
+// import VideoTestimonials from '@/components/VideoTestimonials'
 import React from 'react'
 
 export default function page() {
@@ -13,8 +13,8 @@ export default function page() {
         <HeroSection />
       <Testimonials />
       <TestimonialsCarousel />
-      <TestimonialsStats/>
-      <VideoTestimonials/>
+      {/* <TestimonialsStats/> */}
+      {/* <VideoTestimonials/> */}
       <TestimonialsCTA/>
       <FAQSection />
     </div>

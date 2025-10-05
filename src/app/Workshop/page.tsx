@@ -1,5 +1,6 @@
 import HeroSection from '@/components/HeroSection'
 import WorkshopContent from '@/components/Workshopcontent'
+import WorkshopForm from '@/components/WorkshopForm'
 import Workshops from '@/components/WorkshopsSection'
 import React from 'react'
 
@@ -62,7 +63,7 @@ export default function page() {
 </div>
 
           <Workshops />
-          
+          <WorkshopForm />
     </div>
   )
 }

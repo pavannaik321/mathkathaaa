@@ -46,11 +46,11 @@ export default function PricingSection() {
         {plans.map((plan, i) => (
           <div
             key={i}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 relative"
+            className="bg-white border-2 border-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 relative hover:border-yellow-500"
           >
             {/* Header */}
             <div
-              className={`bg-gradient-to-r ${plan.color} text-white text-center py-6`}
+              className={`bg-gradient-to-r bg-[#0F3D3E] text-white text-center py-6`}
             >
               <h3 className="text-xl font-bold">{plan.duration}</h3>
               <p className="text-sm opacity-90">{plan.sessions}</p>
@@ -66,8 +66,8 @@ export default function PricingSection() {
 
             {/* CTA */}
             <div className="px-6 pb-6">
-              <button className="w-full bg-[#fece11] text-[#0F3D3E] font-semibold px-4 py-3 rounded-full hover:bg-[#e6b800] transition">
-                Buy Now
+              <button className="w-full bg-[#0F3D3E] text-white font-semibold px-4 py-3 rounded-full hover:bg-[#e6b800] transition">
+                Get In Touch
               </button>
             </div>
 

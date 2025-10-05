@@ -12,7 +12,7 @@ const sessionData = {
               "Why is Math a language?": ["What is language?", "Genesis of Math", "An island in Mars around 450 BC", "Evolution of mind"],
               "Math in Art": ["Math in Music", "Math in population dynamics", "Escher’s work that inspired", "Why hexagon is the first step"],
               "Geometry": ["Shapes Around Us", "Angles", "Measuring Lengths", "Area (intro)"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Maryam Mirzakhani"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Maryam Mirzakhani"]
             }
           }
         ]
@@ -31,7 +31,7 @@ const sessionData = {
               "Algebra": ["Why algebra? Why?", "The wrong way of learnging Algebra", "Dungeons & Dragon(s)", "What lies ahead…"],
               "Geometry": ["Angles", "Perimeter & Area", "Transformation", "Math when it was all & only geometry"],
               "Math in Art": ["Math in Music", "Math in population dynamics", "Escher’s work that inspired", "Cicadas love affair with prime number", "Why bees have chosen hexagons"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Carl Friedrich Gauss", "Maryam Mirzakhani"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Carl Friedrich Gauss", "Maryam Mirzakhani"]
             }
           }
         ]
@@ -51,7 +51,7 @@ const sessionData = {
               "Linear equations": ["What is linear?", "Geometrically what is it?", "Solving with intuition", "Understanding techniques - why it works."],
               "Recipe for logic": ["Statements from Axioms to Corollory", "What is induction?", "Proof - trust me, bro!"],
               "Math in Art": ["Math in Music", "Math in population dynamics", "Escher’s work that inspired", "Cicadas love affair with prime number", "Why bees have chosen hexagons"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Maryam Mirzakhani", "Carl Friedrich Gauss"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Maryam Mirzakhani", "Carl Friedrich Gauss"]
             }
           },
           {
@@ -72,7 +72,7 @@ const sessionData = {
               "Graphs & Networks": ["Graphs & components", "Networks in reality", "Principle of counting", "Paths, cycles & real life applications"],
               "Number Theory": ["Divisibility, primes, remainders", "Fundamental theorem of Arthimetic", "Some important theorems"],
               "Algorithmic Thinking": ["What is an algorithm?", "Pseudo-code style", "Sorting and searching", "Recursive thinking"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Maryam Mirzakhani", "Carl Friedrich Gauss", "Blaise Pascal"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Maryam Mirzakhani", "Carl Friedrich Gauss", "Blaise Pascal"]
             }
           }
         ]
@@ -91,7 +91,7 @@ const sessionData = {
               "Geometry": ["Understanding the depth in area", "Measures,lines, & angles", "Full understanding of Pythagaros theorem", "How to contruct & remember proofs", "Solving puzles"],
               "Progressions of Nature": ["Is nature mathphilic?", "Fractals", "The two types of progressions", "Modelling of progressions"],
               "Vectors": ["Scalars are just insufficient", "Is vector sufficient?", "Laws to deal with them..", "How to differentiate?"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Emmy Noether", "René Descartes", "Sophie Germain", "Maryam Mirzakhani"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Emmy Noether", "René Descartes", "Sophie Germain", "Maryam Mirzakhani"]
             }
           },
           {
@@ -110,7 +110,7 @@ const sessionData = {
               "Discrete Math & Algorithms": ["Graphs & components", "Shortest paths & connectivity", "Combinatorics for counting possibilities", "Travelling Salesman problem"],
               "Number Theory & Cryptography": ["Clock Math", "Prime numbers and factorization puzzles", "Simple ciphers"],
               "Logic & Proof Techniques": ["Induction", "Contradiction", "Some important theorems", "Constructive", "Some relevant examples"],
-              "Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Emmy Noether", "René Descartes", "Sophie Germain", "Maryam Mirzakhani"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "Leonhard Euler", "Évariste Galois", "Emmy Noether", "René Descartes", "Sophie Germain", "Maryam Mirzakhani"]
             }
           }
         ]
@@ -129,7 +129,7 @@ const sessionData = {
               "Calculus - I": ["The real philosophy behind Calculus", "The limit of knowledge", "Why Calculus is the pillar of reality", "Why is calculus both easy and hard"],
               "Calculus - II": ["Limits, continuity, so what next?", "Projections & Predictions", "Understanding the relevance of derivatives", "What is derivative?", "The Continuity of limits", "How to navigate through formula?"],
               "Calculus - III": ["Intersection with Trigonometry", "The intiuition behind product rule", "The intiuition behind chain rule", "Why is derivate of sine, consine?", "What lies ahead…"],
-              "Mathematicians": ["Srinivasa Ramanujan", "René Descartes", "Isaac Newton", "Gottfried Wilhelm Leibniz", "Joseph-Louis Lagrange", "Emmy Noether", "Zeno of Elea"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "René Descartes", "Isaac Newton", "Gottfried Wilhelm Leibniz", "Joseph-Louis Lagrange", "Emmy Noether", "Zeno of Elea"]
             }
           },
           {
@@ -147,7 +147,7 @@ const sessionData = {
               "Complex Numbers": ["The iconic history of 'i'", "Complex plane representation", "Roots of unity", "Relevance of imaginary in the real world"],
               "The Math of Physics I": ["Vector World", "Curves of Motion", "Nature’s Equations", "Scaling Laws"],
               "The Math of Physics II": ["Fields & Flows", "Symmetry Math", "Complex Motion", "Calculus of Change"],
-              "Mathematicians": ["Srinivasa Ramanujan", "René Descartes", "Isaac Newton", "Gottfried Wilhelm Leibniz", "Joseph-Louis Lagrange", "Emmy Noether", "Zeno of Elea"]
+              "Stories of Mathematicians": ["Srinivasa Ramanujan", "René Descartes", "Isaac Newton", "Gottfried Wilhelm Leibniz", "Joseph-Louis Lagrange", "Emmy Noether", "Zeno of Elea"]
             }
           }
         ]

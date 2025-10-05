@@ -308,7 +308,7 @@ const kindling = {
             Kindling Concepts
           </h2>
           <p className="text-center text-white max-w-2xl mx-auto mb-12 text-lg">
-            Curiosity-driven explorations that spark early mathematical wonder.
+          Building the foundation of mathematical thinking, one concept at a time. Explore structured journeys for each grade level.
           </p>
   
           {/* Grade Tabs */}

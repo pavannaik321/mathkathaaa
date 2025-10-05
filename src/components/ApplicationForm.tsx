@@ -16,28 +16,21 @@ export default function FreeMathClassForm() {
       {/* Right Section */}
       <div className="bg-[#0F3D3E] p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
         <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-          Book a <span className="text-[#fece11]">TWO FREE</span> Class for your child!
+          Book <span className="text-[#fece11]">TWO FREE</span> Class for your child!
         </h3>
 
         <p className="text-white mb-4">Enter your details below</p>
 
         {/* Form */}
-        <form className="space-y-4">
+        <form className="space-y-4 text-white">
           {/* Phone Number with Country Code */}
           <div className="flex">
-            {/* <select
-              className="px-3 py-2 border border-gray-300 rounded-l-md bg-white text-black focus:outline-none"
-              defaultValue="+91"
-            >
-              <option value="+91">🇮🇳 +91 (India)</option>
-              <option value="+1">🇺🇸 +1 (USA)</option>
-              <option value="+44">🇬🇧 +44 (UK)</option>
-              <option value="+61">🇦🇺 +61 (Australia)</option>
-              <option value="+971">🇦🇪 +971 (UAE)</option>
-              <option value="+92">🇵🇰 +92 (Pakistan)</option>
-              <option value="+880">🇧🇩 +880 (Bangladesh)</option>
-              <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
-            </select> */}
+
+            <input
+              type="tel"
+              placeholder="+91"
+              className="px-4 py-2 border w-15 border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400 mr-2"
+            />
             <input
               type="tel"
               placeholder="Parent’s Mobile Number"

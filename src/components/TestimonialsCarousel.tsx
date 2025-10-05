@@ -20,21 +20,21 @@ const testimonials = [
   },
   {
     name: "Sri Velaga",
-    role: "First year of college",
+    role: "First year Engineering at Loyola University Chicago",
     feedback:
       "The sessions were incredibly helpful for me in helping build my confidence in math. Before tests, I was able to stay calm because I knew we had practiced the concept as much as we could beforehand. I also learned test taking skills and improved the time that it would take me to complete problems.",
     image: "/Home/Carousal/Sri.jpg",
   },
   {
     name: "Diksha Prasad",
-    role: "4th Year B.Tech",
+    role: "Fourth year of Engineering at IIT Palakkad",
     feedback:
       "Mahesh sir taught very well, he used to make me understand all the topics clearly and gave wonderful examples along with his teaching while also making us think outside the box. The sessions were very interactive and he gave a fair amount of practice problems as well which helped. Had a great learning experience and definitely helped me score better in math for boards, and some out of box thinking has helped me during my JEE prep too.",
     image: "/Home/Carousal/Deeksha.jpg",
   },
   {
     name: "Kaveri",
-    role: "12th Grade Student",
+    role: "12th Grade Student at Stanford Online High School",
     feedback:
       "Till I met Mahesh Sir, math meant only numbers and arithmetic operations. However, he made math really fun for me. By introducing the history behind numbers and how math came to be in its current form, he opened up a new world of possibilities. He simultaneously strengthened my foundations and I got a really high score in my test.",
     image: "/Home/Carousal/Kaveri.jpg",

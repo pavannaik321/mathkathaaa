@@ -23,7 +23,7 @@ export default function AboutFounder() {
       {/* Right Image */}
       <div className="mt-8 md:mt-0 md:ml-12">
         <Image
-          src="/About/founder-2.png" // replace with your founder image in /public
+          src="/founder_logo1.png" // replace with your founder image in /public
           alt="Dr. Mahesh Udupa"
           width={400}
           height={450}

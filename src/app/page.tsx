@@ -16,11 +16,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <HeroSection />
+      <HeroSection />
       <HomeAboutSection />
       <CourseOverview />
       {/* <WorldMap /> */}
+      <section id="free-trial-form">
       <FreeMathClassForm />
+      </section>
       <ExamsSection />
       <OurInspiration />
       <HowItWorks />

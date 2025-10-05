@@ -50,7 +50,8 @@ export default function ExamsSection() {
         {data.map((country, idx) => (
           <div
             key={idx}
-            className="rounded-2xl border border-gray-200 shadow-lg bg-white flex flex-col transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            className={`rounded-2xl border border-gray-200 shadow-lg bg-white flex flex-col transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl
+              ${country.name === "India" ? "lg:col-start-2 lg:row-start-2" : ""}`}
           >
             {/* Country Header */}
             <div className="px-6 py-4 rounded-t-2xl">

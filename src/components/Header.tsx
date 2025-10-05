@@ -53,7 +53,7 @@ const Header = () => {
         {/* Right: Book Trial Button */}
         <div className="hidden md:block">
           <Link
-            href="/trial"
+        href="/#free-trial-form"
             className="px-5 py-2 bg-[#FFD93D] text-black font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-colors"
           >
             Book a Free Trial
@@ -96,7 +96,7 @@ const Header = () => {
 
             {/* Mobile Book Trial Button */}
             <Link
-              href="/trial"
+            href="/#free-trial-form"
               className="px-5 py-2 bg-[#FFD93D] text-black font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-colors text-center"
               onClick={() => setIsOpen(false)}
             >
