@@ -42,9 +42,9 @@ export default function Footer() {
               <li>Our Courses</li>
               <li>Testimonials</li>
               <li>Contact Us</li>
-              <li><Link href={
-                "/Career"
-              }>Career </Link></li>
+              <li>
+                <Link href={"/Career"}>Career</Link>
+              </li>
             </ul>
           </div>
 
@@ -86,9 +86,22 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-white">
           <p>© 2025 Mathkathaa. All rights reserved.</p>
-          <div className="flex gap-6 mt-2 md:mt-0">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+          <div className="flex flex-col md:flex-row gap-6 mt-2 md:mt-0 items-center">
+            <div className="flex gap-6">
+              <a href="/PrivacyPolicy">Privacy Policy</a>
+              <a href="/TermsAndConditions">Terms of Service</a>
+            </div>
+            <p className="mt-2 md:mt-0">
+              Designed and Developed by{" "}
+              <a
+                href="https://www.nthbuild.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300 font-extrabold"
+              >
+                NthBuild.com
+              </a>
+            </p>
           </div>
         </div>
       </div>

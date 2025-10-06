@@ -35,7 +35,7 @@ export default function FoundersPick() {
       {/* Foundation Track */}
       <div className="bg-gradient-to-br from-[#124C4D] to-[#0F3D3E] rounded-2xl p-10 relative shadow-lg hover:scale-[1.02] transition-transform">
         <div className="bg-[#FECE11] text-[#0F3D3E] px-4 py-2 rounded-full font-bold shadow-md mb-10">
-        <h4 className="text-xl text-[#0F3D3E] text-center">Foundation Track</h4>
+        <h4 className="text-2xl text-[#0F3D3E] text-center">Foundation Track</h4>
         </div>
         
         <p className="mb-6 text-gray-300">
@@ -53,7 +53,7 @@ export default function FoundersPick() {
       {/* Exploration Track */}
       <div className="bg-gradient-to-br from-[#0F3D3E] to-[#124C4D] rounded-2xl p-10 shadow-lg hover:scale-[1.02] transition-transform">
       <div className="bg-[#FECE11] text-[#0F3D3E] px-4 py-2 rounded-full font-bold shadow-md mb-10">
-        <h4 className="text-xl text-[#0F3D3E] text-center">Exploration Track</h4>
+        <h4 className="text-2xl text-[#0F3D3E] text-center">Exploration Track</h4>
         </div>
         <p className="mb-6 text-gray-300">
           90 sessions to dive deeper into complex topics and advanced problem-solving
