@@ -1,8 +1,18 @@
 // src/app/components/Offerings.tsx
-
+"use client"
 import { GraduationCap, Target, BookOpen } from "lucide-react"; 
-
+import { useRouter } from "next/navigation";
 export default function OurCourseOverview() {
+  const router = useRouter();
+
+  const handleExplore = () => {
+    router.push("/Course");
+  };
+
+  const handleLearnMore = () => {
+    // Navigate to the "founder-pick" section on Course page
+    router.push("/Course#founder-pick");
+  };
   return (
     <section className="w-full px-6 py-16 bg-[#0F3D3E]"
     >
@@ -60,13 +70,20 @@ export default function OurCourseOverview() {
 
         {/* Buttons */}
         <div className="mt-12 flex items-center gap-4">
-          <button className="border border-white px-4 py-2 text-white font-medium hover:bg-white hover:text-[#0F3D3E] rounded">
-            Explore
-          </button>
-          <button  className="flex items-center gap-2 text-white font-medium">
-            Learn More <span className="text-xl">›</span>
-          </button>
-        </div>
+      <button
+        onClick={handleExplore}
+        className="border border-white px-4 py-2 text-white font-medium hover:bg-white hover:text-[#0F3D3E] rounded transition"
+      >
+        Explore
+      </button>
+
+      <button
+        onClick={handleLearnMore}
+        className="flex items-center gap-2 text-white font-medium hover:underline transition"
+      >
+        Learn More <span className="text-xl">›</span>
+      </button>
+    </div>
       </div>
     </section>
   );

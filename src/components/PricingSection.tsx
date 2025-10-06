@@ -1,6 +1,8 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 export default function PricingSection() {
+  const router = useRouter();
   const plans = [
     {
       duration: "4 Months",
@@ -31,7 +33,10 @@ export default function PricingSection() {
       color: "from-blue-500 to-indigo-500",
     },
   ];
-
+  const handleclick = () => {
+    // Navigate to the "founder-pick" section on Course page
+    router.push("#free-trial-form");
+  };
   return (
     <section className="bg-[#0F3D3E] py-20 px-6 mt-10">
       <h2 className="text-4xl font-extrabold text-center text-white mb-4">
@@ -65,7 +70,9 @@ export default function PricingSection() {
             </div>
 
             {/* CTA */}
-            <div className="px-6 pb-6">
+            <div className="px-6 pb-6"
+              onClick={handleclick}
+            >
               <button className="w-full bg-[#0F3D3E] text-white font-semibold px-4 py-3 rounded-full hover:bg-[#e6b800] transition">
                 Get In Touch
               </button>

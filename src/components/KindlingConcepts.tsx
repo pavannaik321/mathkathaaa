@@ -313,7 +313,7 @@ const kindling = {
   
           {/* Grade Tabs */}
           <div className="flex justify-center flex-wrap gap-4 mb-12">
-            {Object.keys(kindling).map((grade) => (
+          {["<4", "5-6", "7-8", "9-10", "11"].map((grade) => (
               <button
                 key={grade}
                 onClick={() => setActiveGrade(grade)}

@@ -217,7 +217,7 @@ export default function KeystoneCuriosity() {
 
         {/* Grade Tabs */}
         <div className="flex justify-center gap-6 mb-12">
-          {Object.keys(grades).map((grade) => (
+        {["7-8", "9-10", "11"].map((grade) => (
             <button
               key={grade}
               onClick={() => setActiveGrade(grade)}

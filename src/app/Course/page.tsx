@@ -24,7 +24,9 @@ export default function page() {
       <KeystoneCuriosity />
       <KindlingConcepts />
       <KneadingHistory />
+      <section id="founder-pick">
       <TracksSection />
+      </section>
       <Session />
       {/* <Workshops /> */}
     </div>

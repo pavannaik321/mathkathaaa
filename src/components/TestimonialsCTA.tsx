@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // src/components/TestimonialsCTA.tsx
 export default function TestimonialsCTA() {
     return (
@@ -24,9 +26,11 @@ export default function TestimonialsCTA() {
           </p>
   
           {/* CTA Button */}
+          <Link href="/#free-trial-form">
           <button className="px-10 py-4 hover:bg-[#FFD93D] hover:text-black font-bold rounded-full shadow-xl hover:scale-105 bg-white text-black transition transform duration-300">
             🚀 Book a Free Session
           </button>
+          </Link>
   
         </div>
       </section>
