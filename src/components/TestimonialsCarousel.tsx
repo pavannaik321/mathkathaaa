@@ -9,21 +9,21 @@ const testimonials = [
     role: "Post Graduate Student (IIT Hyderabad)",
     feedback:
       "It was extremely descriptive and was made easily understandable.",
-    image: "/Home/Carousal/Maadhurima.jpg",
+    image: "/Home/Carousal/Maadhurima.JPG",
   },
   {
     name: "Snehmay Ghosh",
     role: "Research Associate at IISc",
     feedback:
       "Mahesh Sir is an exceptional maths teacher. He explains every problem with such patience and clarity that the solution feels naturally embedded in your mind. He never hesitates to revisit a concept or clear a doubt, no matter how many times you ask, and he does it with a calm smile—never a hint of frustration. His genuine dedication to ensuring his students truly understand the subject makes learning not just easier, but also enjoyable. With him, maths doesn’t feel like a burden—it feels like a journey you actually want to take.",
-    image: "/Home/Carousal/Snehmoy.jpg",
+    image: "/Home/Carousal/Snehmoy.JPG",
   },
   {
     name: "Sri Velaga",
     role: "First year Engineering at Loyola University Chicago",
     feedback:
       "The sessions were incredibly helpful for me in helping build my confidence in math. Before tests, I was able to stay calm because I knew we had practiced the concept as much as we could beforehand. I also learned test taking skills and improved the time that it would take me to complete problems.",
-    image: "/Home/Carousal/Sri.jpg",
+    image: "/Home/Carousal/Sri.JPG",
   },
   {
     name: "Diksha Prasad",
@@ -37,14 +37,14 @@ const testimonials = [
     role: "12th Grade Student at Stanford Online High School",
     feedback:
       "Till I met Mahesh Sir, math meant only numbers and arithmetic operations. However, he made math really fun for me. By introducing the history behind numbers and how math came to be in its current form, he opened up a new world of possibilities. He simultaneously strengthened my foundations and I got a really high score in my test.",
-    image: "/Home/Carousal/Kaveri.jpg",
+    image: "/Home/Carousal/Kaveri.JPG",
   },
   {
     name: "Tushar Halder",
     role: "Junior Research Fellow, University of Hyderabad",
     feedback:
       "The sessions were very interactive. Mahesh sir used to develop the intuition behind the subject matter, i.e; he used to give a motivation for studying the subject. The sessions contained interactive brainstorming followed by plenty of good exercise problems which tested our understanding of the subject matter. Since it was a bachelors level course, most of the sessions contained proofs. Unlike rote learning method, sir used to develop curiosity by explaining the sole idea behind the proofs. This has helped me a lot for what I am currently doing. I would say that I've learnt how to think mathematically and solve problems from those session.",
-    image: "/Home/Carousal/Tushar.jpg",
+    image: "/Home/Carousal/Tushar.JPG",
   },
   {
     name: "Bina Mondal",
