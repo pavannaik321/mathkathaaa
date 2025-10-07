@@ -14,14 +14,40 @@ export default function WorkshopForm() {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const cityRegex = /^[A-Za-z\s]+$/;
+
+    if (!form.instituteName.trim() || form.instituteName.length < 3)
+      return "Institute name must be at least 3 characters.";
+    if (!form.city.trim() || !cityRegex.test(form.city))
+      return "Please enter a valid city name.";
+    if (!form.mode) return "Please select a mode.";
+    if (!emailRegex.test(form.email)) return "Please enter a valid email.";
+    if (!form.ageGroup.trim()) return "Please specify an age group.";
+    if (form.query.length > 300)
+      return "Query should not exceed 300 characters.";
+    return null;
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
 
+    const error = validateForm();
+    if (error) {
+      toast.error(error);
+      return;
+    }
+
+    setLoading(true);
     try {
       const res = await fetch("/api/workshop-email", {
         method: "POST",
@@ -32,11 +58,18 @@ export default function WorkshopForm() {
       const data = await res.json();
       if (data.success) {
         toast.success("Workshop request submitted successfully!");
-        setForm({ instituteName: "", city: "", mode: "", email: "", ageGroup: "", query: "" });
+        setForm({
+          instituteName: "",
+          city: "",
+          mode: "",
+          email: "",
+          ageGroup: "",
+          query: "",
+        });
       } else {
         toast.error("Failed to send. Please try again later.");
       }
-    } catch (err) {
+    } catch {
       toast.error("Something went wrong.");
     } finally {
       setLoading(false);
@@ -61,14 +94,16 @@ export default function WorkshopForm() {
           Plan a <span className="text-[#fece11]">Math Workshop</span>
         </h2>
         <p className="relative mt-4 text-center text-white/90 z-10 max-w-xs">
-          Host interactive workshops to spark mathematical curiosity and learning in your institute.
+          Host interactive workshops to spark mathematical curiosity and
+          learning in your institute.
         </p>
       </div>
 
       {/* Right Section */}
       <div className="bg-[#0F3D3E] p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
         <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-          Book a <span className="text-[#fece11]">Workshop</span> for your Institute
+          Book a <span className="text-[#fece11]">Workshop</span> for your
+          Institute
         </h3>
 
         <form className="space-y-4 text-white" onSubmit={handleSubmit}>
@@ -78,6 +113,7 @@ export default function WorkshopForm() {
             value={form.instituteName}
             onChange={handleChange}
             placeholder="Institute's Name"
+            required
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
@@ -87,6 +123,7 @@ export default function WorkshopForm() {
             value={form.city}
             onChange={handleChange}
             placeholder="City"
+            required
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
@@ -94,11 +131,10 @@ export default function WorkshopForm() {
             name="mode"
             value={form.mode}
             onChange={handleChange}
+            required
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md bg-transparent focus:outline-none"
           >
-            <option value="" disabled>
-              Select Mode (Online / Offline)
-            </option>
+            <option value="">Select Mode (Online / Offline)</option>
             <option value="Online" className="text-black">
               Online
             </option>
@@ -113,6 +149,7 @@ export default function WorkshopForm() {
             value={form.email}
             onChange={handleChange}
             placeholder="Email Address"
+            required
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
@@ -122,6 +159,7 @@ export default function WorkshopForm() {
             value={form.ageGroup}
             onChange={handleChange}
             placeholder="Expected age-group for the workshop"
+            required
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           />
 
@@ -131,6 +169,7 @@ export default function WorkshopForm() {
             onChange={handleChange}
             placeholder="Any queries or questions you may have..."
             rows={4}
+            maxLength={300}
             className="w-full text-white px-4 py-2 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400"
           ></textarea>
 
