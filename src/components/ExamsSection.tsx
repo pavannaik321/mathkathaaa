@@ -16,7 +16,7 @@ const data: Country[] = [
   },
   {
     name: "Australia",
-    exams: [{ name: "ATAR (Maths Specialist, etc.)" }],
+    exams: [{ name: "ATAR" }],
   },
   {
     name: "Canada",

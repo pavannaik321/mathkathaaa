@@ -2,6 +2,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const people = [
   "/Home/Carousal/Deeksha.jpg",
@@ -79,13 +80,17 @@ export default function Testimonials() {
           Learn why professionals trust our solutions to complete their customer
           journeys.
         </p>
+        <Link href="/#free-trial-form">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="mt-8 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-900 transition"
         >
+      
+                    
           Book 2 Free Trials →
         </motion.button>
+                    </Link>
       </motion.div>
     </section>
   );

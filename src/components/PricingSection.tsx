@@ -1,8 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+
 export default function PricingSection() {
   const router = useRouter();
+
   const plans = [
     {
       duration: "4 Months",
@@ -33,18 +35,27 @@ export default function PricingSection() {
       color: "from-blue-500 to-indigo-500",
     },
   ];
-  const handleclick = () => {
-    // Navigate to the "founder-pick" section on Course page
+
+  const handleClick = () => {
     router.push("#free-trial-form");
   };
+
+  const handleKnowMore = () => {
+    router.push("/Course#founder-pick");
+  };
+
   return (
     <section className="bg-[#0F3D3E] py-20 px-6 mt-10">
       <h2 className="text-4xl font-extrabold text-center text-white mb-4">
         Choose Your <span className="text-[#fece11]">Learning Plan</span>
       </h2>
-      <p className="text-center text-gray-200 mb-12 text-lg max-w-2xl mx-auto">
-        Flexible programs designed for curious learners! Pick a plan that suits
-        your journey.
+
+      <p className="text-center text-gray-200 mb-12 text-lg max-w-2xl mx-auto leading-relaxed">
+        Thoughtfully{" "}
+        <span className="text-[#FFD93D] font-semibold">designed programs</span>{" "}
+        for curious minds! Discover our{" "}
+        <span className="text-[#FFD93D] font-semibold">Founder’s Pick</span> and
+        find the plan that suits your goals and interests.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
@@ -69,18 +80,26 @@ export default function PricingSection() {
               <p className="text-gray-600 font-medium">{plan.perSession}</p>
             </div>
 
-            {/* CTA */}
-            <div className="px-6 pb-6"
-              onClick={handleclick}
-            >
-              <button className="w-full bg-[#0F3D3E] text-white font-semibold px-4 py-3 rounded-full hover:bg-[#e6b800] transition">
+            {/* CTA Buttons */}
+            <div className="px-6 pb-6 flex flex-col gap-3 items-center">
+              <button
+                onClick={handleClick}
+                className="w-full bg-[#0F3D3E] text-white font-semibold px-4 py-3 rounded-full hover:bg-[#e6b800] transition"
+              >
                 Get In Touch
+              </button>
+
+              <button
+                onClick={handleKnowMore}
+                className="text-[#0F3D3E] font-semibold underline hover:text-[#e6b800] transition"
+              >
+                Know More
               </button>
             </div>
 
-            {/* Playful badge */}
-            <span className="absolute top-4 right-4 bg-white text-[#0F3D3E] text-xs font-bold px-3 py-1 rounded-full shadow-md">
-              Popular
+            {/* Badge */}
+            <span className="absolute top-2 right-2 bg-white text-[#0F3D3E] text-xs font-bold px-3 py-1 rounded-full shadow-md">
+              {i === 3 ? "Exploration" : "Foundation"}
             </span>
           </div>
         ))}

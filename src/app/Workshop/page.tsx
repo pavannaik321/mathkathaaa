@@ -2,6 +2,7 @@ import HeroSection from '@/components/HeroSection'
 import WorkshopContent from '@/components/Workshopcontent'
 import WorkshopForm from '@/components/WorkshopForm'
 import Workshops from '@/components/WorkshopsSection'
+import { Section } from 'lucide-react'
 import React from 'react'
 
 export default function page() {
@@ -63,7 +64,9 @@ export default function page() {
 </div>
 
           <Workshops />
+          <section id='workshopSection'>
           <WorkshopForm />
+          </section>
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default function Session() {
     <section className="py-20 bg-gradient-to-b from-white to-gray-50" id="session">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Chart Your Course
+        Choose Your Course
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
           A progressive journey through mathematical wonder, blending concepts,
@@ -29,14 +29,18 @@ export default function Session() {
                 onClick={() => setOpenGrade(openGrade === i ? null : i)}
                 className="w-full flex items-center justify-between px-6 py-5 text-left"
               >
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800">
-                    Grade {gradeItem.grade}
-                  </h3>
-                  <p className="text-sm text-gray-500 mt-1">
-                    {gradeItem.tracks.reduce((sum, t) => sum + t.sessions, 0)} Sessions
-                  </p>
-                </div>
+<div className="flex items-center gap-2">
+  <h3 className="text-xl font-bold text-gray-800">
+    Grade {gradeItem.grade}
+  </h3>
+  <span className="text-black text-md font-medium">
+    {gradeItem.tracks.reduce((sum, t) => sum + t.sessions, 0) < 50
+      ? "( Foundation Track )"
+      : "( Foundation Track | Exploratory Track )"}
+  </span>
+</div>
+
+
                 <ChevronDown
                   className={`w-6 h-6 text-gray-500 transform transition-transform ${
                     openGrade === i ? "rotate-180" : ""

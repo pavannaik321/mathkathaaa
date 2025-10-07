@@ -83,7 +83,7 @@ export default function HeroSection() {
 
               {/* Count bubble */}
               <div className="w-16 h-16 flex items-center justify-center rounded-full border-3 border-white bg-[#0F3D3E] text-white font-bold text-lg shadow-md -ml-3">
-                135+
+              65+
               </div>
             </div>
           </section>

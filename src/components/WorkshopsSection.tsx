@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Workshops() {
     const workshops = [
@@ -93,6 +94,8 @@ export default function Workshops() {
                             </div>
 
                             <div className="mt-6 flex items-center gap-3">
+                                <Link href={"#workshopSection"} >
+                                
                                 <button
                                     className={`px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2 transition ${item.highlight
                                         ? "bg-white text-black hover:bg-gray-200"
@@ -102,6 +105,7 @@ export default function Workshops() {
                                     {item.cta || "Learn More"}
                                     <ArrowRight className="w-4 h-4" />
                                 </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
