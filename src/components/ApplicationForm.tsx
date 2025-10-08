@@ -209,7 +209,7 @@ export default function FreeMathClassForm() {
                 loading ? "opacity-70 cursor-not-allowed" : "hover:bg-[#e6b800]"
               }`}
             >
-              {loading ? "Sending..." : "Book Free Math Class"}
+              {loading ? "Sending..." : "Book Free Math Classes"}
             </button>
           </form>
         </div>
