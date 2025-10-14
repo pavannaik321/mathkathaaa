@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,17 @@ const Header = () => {
   return (
     <header className="w-full bg-[#0F3D3E] shadow-md fixed top-0 left-0 z-50">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        {/* Left: Company Name */}
-        <Link href="/" className="text-2xl font-bold text-white">
-          Mathkathaaa
-        </Link>
+{/* Left: Company Logo */}
+<Link href="/" className="flex items-center">
+  <Image
+    src="/Logo_high.svg"
+    alt="Mathkathaaa Logo"
+    width={100}
+    height={50}
+    className="h-6 w-auto" // adjust size as needed
+  />
+</Link>
+
 
         {/* Center: Desktop Nav */}
         <nav className="hidden md:flex space-x-8">

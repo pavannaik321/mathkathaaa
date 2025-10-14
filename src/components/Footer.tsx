@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 import { toast, Toaster } from "react-hot-toast";
+import Image from "next/image";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -53,7 +54,13 @@ export default function Footer() {
         <div className="border bg-white border-black p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo + Newsletter */}
           <div className="md:col-span-1">
-            <h2 className="text-2xl font-bold font-serif">MATHKATHAAA</h2>
+          <Image
+    src="/Logo_Dark_high.svg"
+    alt="Mathkathaaa Logo"
+    width={100}
+    height={50}
+    className="h-6 w-auto" // adjust size as needed
+  />
             <p className="mt-4 text-gray-600">
               Subscribe to our newsletter for the latest updates on features and releases.
             </p>
