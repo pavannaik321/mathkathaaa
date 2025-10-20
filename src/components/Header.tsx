@@ -88,7 +88,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`relative transition-colors after:content-[''] after:absolute after:left-1/2 after:-bottom-1 
+                  className={`relative transition-colors after:content-[''] after:absolute after:right-1/2 after:-bottom-1 
                               after:h-[2px] after:w-0 after:transition-all after:duration-300
                               ${
                                 isActive

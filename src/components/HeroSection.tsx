@@ -14,7 +14,6 @@ export default function HeroSection() {
       >
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-black/40" />
-
         {/* Content */}
         <div className="relative text-center space-y-6 max-w-3xl px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl italic font-extrabold leading-snug text-center text-yellow-300">
@@ -43,46 +42,46 @@ export default function HeroSection() {
                 alt="Teacher 1"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover"
               />
               <Image
                 src="/Home/Carousal/Kaveri.JPG"
                 alt="Teacher 2"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover -ml-3"
               />
               <Image
                 src="/Home/Carousal/Maadhurima.JPG"
                 alt="Teacher 3"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover -ml-3"
               />
               <Image
                 src="/Home/Carousal/Snehmoy.JPG"
                 alt="Teacher 4"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover -ml-3"
               />
               <Image
                 src="/Home/Carousal/Sri.JPG"
                 alt="Teacher 5"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover -ml-3"
               />
               <Image
                 src="/Home/Carousal/Tushar.JPG"
                 alt="Teacher 6"
                 width={60}
                 height={60}
-                className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
+                className="md:w-16 md:h-16 w-14 h-14 rounded-full border-3 border-white shadow-md object-cover -ml-3"
               />
 
               {/* Count bubble */}
-              <div className="w-16 h-16 flex items-center justify-center rounded-full border-3 border-white bg-[#0F3D3E] text-white font-bold text-lg shadow-md -ml-3">
+              <div className="md:w-16 md:h-16 w-14 h-14 flex items-center justify-center rounded-full border-3 border-white bg-[#0F3D3E] text-white font-bold text-lg shadow-md -ml-3">
               65+
               </div>
             </div>
@@ -94,8 +93,10 @@ export default function HeroSection() {
         </div>
 
       </div>
+      <div className='md:flex hidden'>
 
       <CurvyHeader />
+      </div>
     </div>
   )
 }
