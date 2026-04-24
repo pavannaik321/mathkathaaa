@@ -165,6 +165,15 @@ export default function MaintenancePage() {
         .dot-blink {
           animation: blink 1.2s ease-in-out infinite;
         }
+
+        @keyframes illustFloat {
+          0%, 100% { transform: translateY(0px) rotate(-1deg); }
+          50%       { transform: translateY(-18px) rotate(1deg); }
+        }
+
+        .illus-float {
+          animation: illustFloat 5s ease-in-out infinite;
+        }
       `}</style>
 
       <div
@@ -204,149 +213,136 @@ export default function MaintenancePage() {
           }}
         />
 
-        {/* Main card */}
+        {/* Wrapper — single col mobile, two col desktop */}
         <div
-          className={`relative z-10 flex flex-col items-center max-w-lg w-full transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}
+          className={`relative z-10 w-full max-w-6xl flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-12 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0"}`}
         >
-          {/* Logo */}
-          <div className="fade-up-1 mb-10">
-            <Image
-              src="/Logo_high.svg"
-              alt="Mathkathaaa Logo"
-              width={180}
-              height={90}
-              className="h-14 w-auto drop-shadow-lg"
-            />
-          </div>
-
-          {/* Gear icon with ripples */}
-          <div className="fade-up-2 relative flex items-center justify-center mb-10">
-            {/* Ripple rings */}
+          {/* ── LEFT: Illustration ── */}
+          <div className="fade-up-2 relative flex items-center justify-center w-full lg:w-1/2">
+            {/* Ripple rings behind illustration */}
             {["ripple-1", "ripple-2", "ripple-3"].map((cls) => (
               <span
                 key={cls}
-                className={`${cls} absolute rounded-full border border-yellow-400`}
-                style={{ width: "96px", height: "96px" }}
+                className={`${cls} absolute rounded-full border border-yellow-400/30`}
+                style={{ width: "320px", height: "320px" }}
               />
             ))}
 
-            {/* Glow ring */}
+            {/* Glow blob */}
             <div
-              className="glow-ring flex items-center justify-center w-24 h-24 rounded-full"
+              className="absolute rounded-full pointer-events-none"
               style={{
-                backgroundColor: "#FFD93D18",
-                border: "2px solid #FFD93D",
+                width: "340px",
+                height: "340px",
+                background: "radial-gradient(circle, rgba(255,217,61,0.12) 0%, transparent 70%)",
               }}
-            >
-              {/* Outer gear */}
-              <svg
-                className="gear-outer absolute w-16 h-16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FFD93D"
-                strokeWidth="1"
-              >
-                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
-                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
-              </svg>
-
-              {/* Inner wrench */}
-              <svg
-                className="gear-inner w-7 h-7 relative z-10"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FFD93D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {/* <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" /> */}
-              </svg>
-            </div>
-          </div>
-
-          {/* Heading */}
-          <div className="fade-up-3 text-center mb-3">
-            <h1 className="text-5xl sm:text-6xl font-extrabold shimmer-text leading-tight">
-              We&apos;ll Be Back
-            </h1>
-            <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-tight">
-              Soon
-              <span className="dot-blink" style={{ color: "#FFD93D" }}>
-                !
-              </span>
-            </h1>
-          </div>
-
-          {/* Yellow divider */}
-          <div className="fade-up-3 flex items-center gap-3 my-6">
-            <div
-              className="h-px w-16 rounded"
-              style={{ backgroundColor: "#FFD93D55" }}
             />
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: "#FFD93D" }}
-            />
-            <div
-              className="h-px w-16 rounded"
-              style={{ backgroundColor: "#FFD93D55" }}
-            />
-          </div>
 
-          {/* Description */}
-          <p className="fade-up-4 text-lg sm:text-xl text-center text-gray-300 max-w-md leading-relaxed mb-3">
-            Our website is currently undergoing scheduled maintenance to bring
-            you a better experience.
-          </p>
-          <p className="fade-up-4 text-sm text-center text-gray-500 max-w-sm mb-8">
-            We apologize for the inconvenience. Please check back shortly — we
-            won&apos;t be long{dots}
-          </p>
-
-          {/* Progress bar */}
-          <div className="fade-up-5 w-full max-w-sm mb-10">
-            <div className="flex justify-between text-xs text-gray-500 mb-2">
-              <span>Progress</span>
-              <span style={{ color: "#FFD93D" }}>Almost there</span>
-            </div>
-            <div
-              className="w-full h-2 rounded-full overflow-hidden"
-              style={{ backgroundColor: "#ffffff15" }}
-            >
-              <div
-                className="progress-bar h-full rounded-full"
-                style={{
-                  background: "linear-gradient(90deg, #FFD93D, #e6b800)",
-                  boxShadow: "0 0 10px #FFD93D88",
-                }}
+            {/* The SVG illustration */}
+            <div className="illus-float relative z-10">
+              <Image
+                src="/Phone maintenance-pana.svg"
+                alt="Under Maintenance Illustration"
+                width={420}
+                height={420}
+                className="w-72 sm:w-96 lg:w-[420px] h-auto drop-shadow-2xl"
+                priority
               />
             </div>
           </div>
 
-          {/* Contact card */}
-          <div
-            className="fade-up-6 w-full max-w-sm flex flex-col sm:flex-row items-center justify-center gap-2 px-6 py-4 rounded-2xl text-sm"
-            style={{
-              backgroundColor: "#ffffff08",
-              border: "1px solid #FFD93D33",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <span className="text-gray-400">Need help?</span>
-            <a
-              href="mailto:hello@mathkathaaa.com"
-              className="font-semibold transition-opacity hover:opacity-80"
-              style={{ color: "#FFD93D" }}
-            >
-              hello@mathkathaaa.com
-            </a>
-          </div>
+          {/* ── RIGHT: Content ── */}
+          <div className="flex flex-col items-center lg:items-start w-full lg:w-1/2">
+            {/* Logo */}
+            <div className="fade-up-1 mb-8">
+              <Image
+                src="/Logo_high.svg"
+                alt="Mathkathaaa Logo"
+                width={180}
+                height={90}
+                className="h-12 w-auto drop-shadow-lg"
+              />
+            </div>
 
-          {/* Footer */}
-          <p className="fade-up-6 mt-10 text-xs text-gray-600">
-            &copy; {new Date().getFullYear()} Mathkathaaa. All rights reserved.
-          </p>
+            {/* Badge */}
+            <div
+              className="fade-up-2 flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
+              style={{ backgroundColor: "#FFD93D22", border: "1px solid #FFD93D55", color: "#FFD93D" }}
+            >
+              <span className="dot-blink inline-block w-2 h-2 rounded-full bg-yellow-400" />
+              Scheduled Maintenance
+            </div>
+
+            {/* Heading */}
+            <div className="fade-up-3 mb-3 text-center lg:text-left">
+              <h1 className="text-5xl sm:text-6xl font-extrabold shimmer-text leading-tight">
+                We&apos;ll Be Back
+              </h1>
+              <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-tight">
+                Very Soon
+                <span className="dot-blink" style={{ color: "#FFD93D" }}>!</span>
+              </h1>
+            </div>
+
+            {/* Yellow divider */}
+            <div className="fade-up-3 flex items-center gap-3 my-5">
+              <div className="h-px w-16 rounded" style={{ backgroundColor: "#FFD93D55" }} />
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "#FFD93D" }} />
+              <div className="h-px w-16 rounded" style={{ backgroundColor: "#FFD93D55" }} />
+            </div>
+
+            {/* Description */}
+            <p className="fade-up-4 text-lg text-center lg:text-left text-gray-300 max-w-md leading-relaxed mb-2">
+              Our website is currently undergoing scheduled maintenance to bring you a better experience.
+            </p>
+            <p className="fade-up-4 text-sm text-center lg:text-left text-gray-500 max-w-sm mb-8">
+              We apologize for the inconvenience. Please check back shortly — we won&apos;t be long{dots}
+            </p>
+
+            {/* Progress bar */}
+            <div className="fade-up-5 w-full max-w-sm mb-8">
+              <div className="flex justify-between text-xs text-gray-500 mb-2">
+                <span>Progress</span>
+                <span style={{ color: "#FFD93D" }}>Almost there</span>
+              </div>
+              <div
+                className="w-full h-2 rounded-full overflow-hidden"
+                style={{ backgroundColor: "#ffffff15" }}
+              >
+                <div
+                  className="progress-bar h-full rounded-full"
+                  style={{
+                    background: "linear-gradient(90deg, #FFD93D, #e6b800)",
+                    boxShadow: "0 0 10px #FFD93D88",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Contact card */}
+            <div
+              className="fade-up-6 flex flex-col sm:flex-row items-center gap-2 px-6 py-4 rounded-2xl text-sm"
+              style={{
+                backgroundColor: "#ffffff08",
+                border: "1px solid #FFD93D33",
+                backdropFilter: "blur(8px)",
+              }}
+            >
+              <span className="text-gray-400">Need help?</span>
+              <a
+                href="mailto:hello@mathkathaaa.com"
+                className="font-semibold transition-opacity hover:opacity-80"
+                style={{ color: "#FFD93D" }}
+              >
+                hello@mathkathaaa.com
+              </a>
+            </div>
+
+            {/* Footer */}
+            <p className="fade-up-6 mt-8 text-xs text-gray-600">
+              &copy; {new Date().getFullYear()} Mathkathaaa. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </>
